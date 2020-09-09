@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2c3e50;
+    font-weight: 600;
+}
+.game {
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.info {
+    height: 10vmin;
+    max-width: 90vmin;
+    color: #bdbdbd;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-player {
+    background-color: #bdbdbd;
+    padding: 3px;
+    color: #2c3e50;;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+.currentPlayer {
+    transition: all 0.5s;
+}
+
+.playground {
+    width: 80vmin;
+    height: 80vmin;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.cell {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px #bdbdbd;
+    background-color: #2c3e50;
+    cursor: pointer;
+}
+.cell span {
+    transform: scale(0);
+    transition: transform 0.5s;
+    font-size: 10vmin;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+/* .ai {
+    height: 10vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+/* #ai {
+    display: none;
+}
+.ai-label {
+    color: #bdbdbd;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+.active {
+    box-shadow: inset 0px 0px 5px black;
+    background-color: #bdbdbd;
+    color: #2c3e50;
+} */
+
+.ai {
+    height: 10vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vmin;
+}
+.ai input {
+    display: none;
+}
+.ai-label {
+    color: #bdbdbd;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+.active {
+    box-shadow: inset 0px 0px 5px black;
+    background-color: #bdbdbd;
+    color: #2c3e50;
+}

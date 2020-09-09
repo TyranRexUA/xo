@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <title>XO</title>
+</head>
+<body>
+    <div class="game">
+
+        <div class="info">
+
+            <!-- <span class="title">SCORE</span> -->
+            
+            <div class="info-player">
+                <p>X -  <span class="playerXScore"></span></p>
+            </div>
+
+            <div class="info-currentPlayer">
+                <span>Ходит: </span><span class="currentPlayer"></span>
+            </div>
+
+            <div class="info-player">
+                <p>O -  <span class="playerOScore"></span></p>
+            </div>
+
+        </div>
+
+        <div class="playground">
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+            <div class="cell">
+                <span></span>
+            </div>
+
+        </div>
+
+        <form class="ai">
+            <!-- <input type="checkbox" name="ai" id="ai">
+            <label class="ai-label" for="ai">БОТ</label> -->
+
+            <input type="radio" name="bot" id="none">
+            <label class="ai-label active" for="none">no bot</label>
+
+            <input type="radio" name="bot" id="normal">
+            <label class="ai-label" for="normal">normal</label>
+
+            <input type="radio" name="bot" id="insane">
+            <label class="ai-label" for="insane">insane</label>
+        </form>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
